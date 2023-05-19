@@ -1,0 +1,19 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Get Weather Plugin",
+    "name_for_model": "get_weather",
+    "description_for_human": "Plugin for searching weather condition using Open Weather Map API. You can get any country's or city's weather status.",
+    "description_for_model": "Plugin for searching weather condition using Open Weather Map API. You can get any country's or city's weather status. 'get weather at {search}'",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "http://localhost:4000/.well-known/openai.yaml",
+      "is_user_authenticated": false
+    },
+    "logo_url": "PLUGIN_HOSTNAME/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "https://example.com/legal"
+  }
+  

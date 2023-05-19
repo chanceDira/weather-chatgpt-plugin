@@ -1,0 +1,60 @@
+openapi: 3.0.1
+info:
+  title: Get Weather Plugin
+  description: Plugin for searching weather condition using ChatGPT.
+  version: "v1"
+servers:
+  - url: http://localhost:4000
+paths:
+  /api/v1/getWeather:
+    get:
+      operationId: getWeather
+      summary: Get the current weather for a specific location
+      parameters:
+        - in: query
+          name: location
+          schema:
+            type: string
+          description: The location to get the weather for
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/getWeatherResponse"
+        "500":
+          description: Error making request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/errorResponse"
+components:
+  schemas:
+    getWeatherResponse:
+      type: object
+      properties:
+        weather:
+          type: object
+          properties:
+            name:
+              type: string
+            main:
+              type: object
+              properties:
+                temp:
+                  type: number
+            weather:
+              type: array
+              items:
+                type: object
+                properties:
+                  main:
+                    type: string
+                  description:
+                    type: string
+    errorResponse:
+      type: object
+      properties:
+        message:
+          type: string
