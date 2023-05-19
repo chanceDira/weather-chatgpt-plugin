@@ -9,7 +9,6 @@
     "build": "babel src -d build",
     "dev": "env-cmd -f .env nodemon --ignore --exec babel-node ./src/index.js"
   },
-  "author": "kolawole olaniyi",
   "type": "module",
   "license": "ISC",
   "dependencies": {
@@ -22,5 +21,6 @@
     "@babel/preset-env": "^7.20.2"
   },
   "devDependencies": {
-  }
+  },
+  "author": "Chance Desire IRADUKUNDA"
 }

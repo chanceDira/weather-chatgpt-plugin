@@ -9,7 +9,7 @@
     },
     "api": {
       "type": "openapi",
-      "url": "http://localhost:4000/.well-known/openai.yaml",
+      "url": "https://funny-blue-dibbler.cyclic.app/.well-known/openai.yaml",
       "is_user_authenticated": false
     },
     "logo_url": "PLUGIN_HOSTNAME/logo.png",

@@ -4,15 +4,15 @@ info:
   description: Plugin for searching weather condition using ChatGPT.
   version: "v1"
 servers:
-  - url: http://localhost:4000
+  - url: https://funny-blue-dibbler.cyclic.app
 paths:
-  /api/v1/getWeather:
+  /api/v1/get-weather:
     get:
       operationId: getWeather
       summary: Get the current weather for a specific location
       parameters:
         - in: query
-          name: location
+          name: search
           schema:
             type: string
           description: The location to get the weather for
