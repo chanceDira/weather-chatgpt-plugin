@@ -31,3 +31,5 @@ To successfully navigate the codebase of the project, you will need undertanding
 - Javascript
 - Open Weather Map API
 
+## Live link
+[here](https://funny-blue-dibbler.cyclic.app/.well-known/ai-plugin.json)
